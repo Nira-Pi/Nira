@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nira — Assistant vocal privé</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0c0c0c;
+      color: #ffffff;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #cccccc;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .hero {
+      margin-top: 5rem;
+      max-width: 800px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      margin-bottom: 2rem;
+    }
+    .cta {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #ffffff;
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background-color: #333;
+    }
+    section {
+      margin-top: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .features, .privacy, .testimonials, .contact {
+      max-width: 800px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature-item {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #2a2a2a;
+      transition: transform 0.2s;
+    }
+    .feature-item:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      margin-top: 6rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+    .testimonial {
+      background: #1a1a1a;
+      padding: 1rem;
+      border-left: 4px solid #444;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: #111;
+      color: #fff;
+    }
+    input[type="submit"] {
+      background-color: #222;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #333;
+    }
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Nira</div>
+    <nav>
+      <a href="#features">Fonctionnalités</a>
+      <a href="#privacy">Confidentialité</a>
+      <a href="#testimonials">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>L'assistant vocal. Privé. Personnel. Puissant.</h1>
+    <p>Découvrez <strong>Nira</strong>, votre intelligence vocale conçue pour la sécurité, l'efficacité et la discrétion. Aucune connexion cloud. Aucune surveillance. Tout reste chez vous.</p>
+    <button class="cta">Voir la démo</button>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Fonctionnalités clés</h2>
+    <div class="feature-item">🔒 <strong>100% hors ligne</strong> – vos données ne quittent jamais votre appareil</div>
+    <div class="feature-item">🎙️ <strong>Reconnaissance vocale précise</strong> sans connexion Internet</div>
+    <div class="feature-item">📆 <strong>Assistant de productivité</strong> – rappels, listes, alarmes</div>
+    <div class="feature-item">🔊 <strong>Lecteur audio local</strong> – commandez votre musique avec la voix</div>
+    <div class="feature-item">🧠 <strong>IA locale optimisée Raspberry Pi</strong> – rapide et réactive</div>
+    <div class="feature-item">💡 <strong>Compatible domotique</strong> – intégrez-le facilement à vos appareils connectés</div>
+  </section>
+
+  <section id="privacy" class="privacy">
+    <h2>Respect de votre vie privée</h2>
+    <p>Chez Nira, la confidentialité n'est pas une option. C'est une promesse. Nous n'envoyons aucune donnée à des serveurs distants. Vos conversations restent chez vous, pour toujours.</p>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>Ils ont choisi Nira</h2>
+    <div class="testimonial">"J'ai enfin trouvé un assistant vocal qui respecte vraiment ma vie privée. Bravo à l'équipe derrière Nira." – Chloé, Bordeaux</div>
+    <div class="testimonial">"Fluide, rapide, aucune latence. Et tout tourne sur un Raspberry ? Bluffant." – Yannick, développeur</div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Commander Nira</h2>
+    <p>Envie de commander Nira ? Remplissez ce formulaire et nous vous répondrons rapidement :</p>
+    <form action="https://formspree.io/f/xgvkeljj" method="POST">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre e-mail" required>
+        <textarea name="message" placeholder="Message ou demande de commande" rows="4" required></textarea>
+        <input type="submit" value="Envoyer ma commande">
+      </form>      
+  </section>
+
+  <footer>
+    &copy; 2025 Nira Technologies. Tous droits réservés.
+  </footer>
+</body>
+</html>
